@@ -1,44 +1,108 @@
-@charset "UTF = 8";
 body{
-    background-color: #999999;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background: grey;
+}
+/*Header*/
+header{
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    
+}
+.titulo-principal, .link-navegacao{
+    display: inline-block;
+}
+.titulo-principal{
+    font-size: 32px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
 
+.navegacao{
+    display: flex;
+    text-align: right;
+}
+.navegacao li{
+    list-style: none;
+    margin-left: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.navegacao li:hover{
+    background: #CCCCCC;
+    font-size: 20.5px;
+}
+/*Fim Header*/
+
+
+/*Main*/
+main{
+    background: linear-gradient(#EEEEEE, #DDDDDD );
 }
 .caixa{
-    background-color: #eeeeee;
-    position: relative;
-    width: 940px;
+    display: flex;
+}
+.conversao{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0 auto;
-
 }
 
-nav{
-	position: absolute;
-	top: 110px;
-    right: 0px;
-    margin-right: 60px;
+.conversao li{
+    border: 3px solid black;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 100px;
+    flex-shrink: 2;
+    flex-grow: 1;
+    
 }
+.conversao li:hover{
+    background: #CCCCCC;
+}
+/*Fim do Main*/
 
-nav li{
-	display: inline;
-	margin: 0 0 0 15px;
-}
-main > .caixa{
-    padding: 50px 0 0;
-}
-main li{
-    display: inline-block;
-    border: 2px solid black;
-    padding: 5em;
-    margin: 0 0 20px 23%;
+footer{
+    background: #CCCCCC;
+    padding: 70px 0;
 
 }
-main label{
-    font-size: 17px;
-    margin: 0 0 5px;
-    display: inline-block;
+footer .copyright{
+    margin-top: 0.5em;
+    font-size: 18px;
 }
-main input{
-    background-color: #dddddd;
-    padding: 3px;
-    font-size: 18px
+
+
+
+
+/*Mobile*/
+@media(max-width(768px)){
+    body{
+        width: 80%;
+    }
+    header{
+        padding: 68px;
+
+    }
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .navegacao li{
+        font-size: 32px;
+    }
+    .conversao li{
+        padding: 185px;
+    }
+    footer .copyright{
+        font-size: 34px;
+    }
 }
