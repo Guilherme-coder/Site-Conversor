@@ -85,7 +85,7 @@ footer .copyright{
 
 
 /*Mobile*/
-@media(max-width(768px)){
+@media(max-width: 768px){
     body{
         width: 80%;
     }
@@ -94,15 +94,18 @@ footer .copyright{
 
     }
     .titulo-principal{
-        font-size: 50px;
+        font-size: 40px;
     }
     .navegacao li{
-        font-size: 32px;
+        font-size: 25px;
     }
     .conversao li{
-        padding: 185px;
+        padding: 100px;
     }
     footer .copyright{
         font-size: 34px;
+    }
+    .tipo-conversao{
+        font-size: 30px;
     }
 }
