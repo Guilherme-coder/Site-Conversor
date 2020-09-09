@@ -69,6 +69,27 @@ main{
 .conversao li:hover{
     background: #CCCCCC;
 }
+
+.enviar{
+    display: block;
+    margin: 20px auto;
+    padding: .5em 1.5em;
+    background-color: #dddddd;
+    transition: all;
+}
+.enviar:hover{
+    background: #bbbbbb;
+    cursor: pointer;
+    transition: .7s;
+}
+.label{
+    display: block;
+    margin: 0 auto;
+    background: #dddddd;
+}
+
+
+
 /*Fim do Main*/
 
 footer{
