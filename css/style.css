@@ -4,9 +4,10 @@ body{
     text-align: center;
     background: grey;
 }
+
 /*Header*/
 header{
-    background: #EEEEEE;
+    background: #FDFDFD;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,8 @@ header{
 
 /*Main*/
 main{
-    background: linear-gradient(#EEEEEE, #DDDDDD );
+    background: linear-gradient(#FDFDFD, #EEEEEE);
+    padding-bottom: 2em;
 }
 .caixa{
     display: flex;
@@ -64,10 +66,12 @@ main{
     padding: 100px;
     flex-shrink: 2;
     flex-grow: 1;
+    transition: all;
     
 }
 .conversao li:hover{
-    background: #CCCCCC;
+    background: #DDDDDD;
+    transition: 0.3s;
 }
 
 .enviar{
@@ -92,6 +96,7 @@ main{
 
 /*Fim do Main*/
 
+/*Footer*/
 footer{
     background: #CCCCCC;
     padding: 70px 0;
@@ -101,7 +106,7 @@ footer .copyright{
     margin-top: 0.5em;
     font-size: 18px;
 }
-
+/*Fim do Footer*/
 
 
 
