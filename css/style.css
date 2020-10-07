@@ -59,6 +59,11 @@ main{
     margin: 0 auto;
 }
 
+.fontes-lista{
+    font-size: 1.7em;
+    margin-bottom: .3em;
+}
+
 .conversao li{
     border: 3px solid black;
     list-style: none;
@@ -94,6 +99,7 @@ main{
 
 
 
+
 /*Fim do Main*/
 
 /*Footer*/
@@ -111,27 +117,41 @@ footer .copyright{
 
 
 /*Mobile*/
-@media(max-width: 768px){
+@media(max-width: 950px){
     body{
-        width: 80%;
-    }
-    header{
-        padding: 68px;
-
-    }
-    .titulo-principal{
-        font-size: 40px;
-    }
-    .navegacao li{
-        font-size: 25px;
+        width: 90%;
     }
     .conversao li{
-        padding: 100px;
+        width: 10em;
     }
-    footer .copyright{
-        font-size: 34px;
+}
+
+@media(max-width: 500px){
+    header{
+        flex-direction: column;   
     }
-    .tipo-conversao{
-        font-size: 30px;
+    .navegacao{
+        width: 20em;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegacao li{
+        width: 90%;
+        margin-top: 1em;
+        text-align: center;
+        margin-left: 0;
+    }
+    body{
+        width: 115%;
+    }
+    .conversao li{
+        padding: 5em;
+    }
+}
+
+@media(max-width: 320px){
+    body{
+        width: 145%;
     }
 }
